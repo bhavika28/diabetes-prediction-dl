@@ -1,4 +1,4 @@
-# Diabetes-Prediction-using-Tensorflow-and-PyTorch
+# Diabetes Prediction using Tensorflow and PyTorch
 
 
 Step 1. Import the data from the given .csv file (diabetes.csv Download diabetes.csv). The first few columns contain the data while the last column is a binary class label of 0 or 1
