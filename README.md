@@ -30,31 +30,25 @@ Predicting diabetes onset using patient health metrics to enable early intervent
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 ## 🚀 Quick Start
-Prerequisites
-bashpip install tensorflow torch pandas scikit-learn matplotlib seaborn
 
-Run the Analysis
+### Prerequisites
+```bash
+pip install tensorflow torch pandas scikit-learn matplotlib seaborn numpy
+
 # Clone the repository
 git clone https://github.com/bhavika28/diabetes-prediction-dl.git
 cd diabetes-prediction-dl
 
-# Run TensorFlow implementation
-python tensorflow_model.py
+# Open and run the notebooks
+jupyter notebook tensorflow.ipynb
+jupyter notebook pytorch_model.ipynb
 
-# Run PyTorch implementation
-python pytorch_model.py
+## 📁 Project Files
 
-# Compare results
-python compare_models.py
-
-### Run TensorFlow implementation
-python tensorflow_model.py
-
-### Run PyTorch implementation
-python pytorch_model.py
-
-### Compare results
-python compare_models.py
+- **diabetes.csv** - Pima Indians diabetes dataset (768 samples, 8 features)
+- **tensorflow.ipynb** - Complete TensorFlow implementation with data loading, preprocessing, model training, and evaluation
+- **pytorch_model.ipynb** - Complete PyTorch implementation with data loading, preprocessing, model training, and evaluation
+- **README.md** - Project documentation and framework comparison
 
 ## 🧪 Model Experiments
 ### Baseline Model
@@ -69,7 +63,7 @@ Hypothesis: Deeper network with batch normalization will improve generalization
 5-layer network with BatchNorm and adaptive learning rate
 Result: 85.2% accuracy (+12% improvement)
 
-### Framework Comparison
+
 ### Framework Comparison
 | Metric | TensorFlow | PyTorch | Winner |
 |--------|------------|---------|---------|
