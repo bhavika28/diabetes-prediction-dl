@@ -34,14 +34,19 @@ Predicting diabetes onset using patient health metrics to enable early intervent
 ### Prerequisites
 ```bash
 pip install tensorflow torch pandas scikit-learn matplotlib seaborn numpy
+```
 
-# Clone the repository
+### Clone the repository
+```bash
 git clone https://github.com/bhavika28/diabetes-prediction-dl.git
 cd diabetes-prediction-dl
+```
 
-# Open and run the notebooks
+### Open and run the notebooks
+```bash
 jupyter notebook tensorflow.ipynb
 jupyter notebook pytorch_model.ipynb
+```
 
 ## 📁 Project Files
 
