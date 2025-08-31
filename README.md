@@ -32,36 +32,29 @@ Predicting diabetes onset using patient health metrics to enable early intervent
 ## 🚀 Quick Start
 Prerequisites
 bashpip install tensorflow torch pandas scikit-learn matplotlib seaborn
+
 Run the Analysis
-bash# Clone the repository
+# Clone the repository
 git clone https://github.com/bhavika28/diabetes-prediction-dl.git
 cd diabetes-prediction-dl
 
-## Run TensorFlow implementation
+# Run TensorFlow implementation
 python tensorflow_model.py
 
-## Run PyTorch implementation
+# Run PyTorch implementation
 python pytorch_model.py
 
-## Compare results
+# Compare results
 python compare_models.py
-📁 Project Structure
-diabetes-prediction-dl/
-├── data/
-│   └── diabetes.csv           # Raw dataset
-├── notebooks/
-│   ├── data_exploration.ipynb # EDA and visualization
-│   ├── tensorflow_model.ipynb # TF implementation
-│   └── pytorch_model.ipynb    # PyTorch implementation
-├── src/
-│   ├── data_preprocessing.py  # Data cleaning utilities
-│   ├── model_tensorflow.py    # TF model architecture
-│   ├── model_pytorch.py       # PyTorch model architecture
-│   └── evaluation.py          # Model comparison metrics
-├── results/
-│   ├── model_comparison.png   # Performance visualization
-│   └── confusion_matrix.png   # Classification results
-└── README.md
+
+### Run TensorFlow implementation
+python tensorflow_model.py
+
+### Run PyTorch implementation
+python pytorch_model.py
+
+### Compare results
+python compare_models.py
 
 ## 🧪 Model Experiments
 ### Baseline Model
@@ -77,8 +70,13 @@ Hypothesis: Deeper network with batch normalization will improve generalization
 Result: 85.2% accuracy (+12% improvement)
 
 ### Framework Comparison
-MetricTensorFlowPyTorchWinnerAccuracy85.2%84.8%TensorFlowTraining Time45s52sTensorFlowMemory Usage2.1GB2.3GBTensorFlowEase of Use⭐⭐⭐⭐⭐⭐⭐⭐⭐PyTorch
-📈 Key Insights
+### Framework Comparison
+| Metric | TensorFlow | PyTorch | Winner |
+|--------|------------|---------|---------|
+| Accuracy | [85.2]% | [84.8]% | [TensorFlow] |
+| Training Time | [45]s | [52]s | [TensorFlow] |
+| Ease of Implementation | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [TensorFlow] |
+| Code Readability | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [PyTorch] |
 
 ### Feature Importance: Glucose levels and BMI are strongest predictors
 Model Architecture: Batch normalization significantly improved convergence
